@@ -1,103 +1,252 @@
- body{
-        margin : 0px;
-        padding : 0px;
-        background : url('img/img3.jpg');
-        color : white;
-        line-height: 0px;
-    }
-    .left{
-        position : absolute;
-        left : 32px;
-        top : 18px;
-        display : inline-block;
-        color : white;
-        /* border : 2px solid red ; */
-    }
-    .left img{
-        width : 136px;
-        text-align: center;
-    }
-    .mid{
-        display : block;
-        width : 33%;
-        margin : 18px auto;
-        color : white;
-        /* border : 2px solid yellow ; */
-    }
-    .right{
-        position : absolute;
-        right : 32px;
-        top : 18px;
-        display : inline-block;
-        color : white;
-        /* border : 2px solid green ; */
-    }
+body{
+    margin : 0px;
+    padding : 0px;
+    background : url('img/img3.jpg');
+    color : white;
+    line-height: 0px;
+    min-height: 10vh;
+}
+.left{
+    position : absolute;
+    left : 32px;
+    top : 18px;
+    display : inline-block;
+    color : white;
+    margin: 10px 34px;
+    /* border : 2px solid red ; */
+}
+.left img{
+    height: 92px;
+    width: 136px;
+    text-align: center;
+    margin: 9px -24px;
+}
+.mid{
+    display : block;
+    width : 33%;
+    margin : 18px auto;
+    color : white;
+    /* border : 2px solid yellow ; */
+}
+.right{
+    position : absolute;
+    right : 32px;
+    top : 18px;
+    display : inline-block;
+    color : white;
+    /* border : 2px solid green ; */
+}
 
-    .navbar{
-        display : inline-block;
-    }
+.navbar{
+    display : flex;
+    position: relative;
+    align-items: center;
+    top: 0px;
+}
 
-    .navbar li{
-        color : white ;
-        display : inline-block;
-        font-size: 15px;
-    }
+.navbar::before{
+    content: "";
+    background-color: blue;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
 
-    .navbar li a{
-        color : white;
-        text-decoration : none;
-        padding : 30px;
-    }
+.navbar li{
+    color : white ;
+    display : flex;
+    font-size: 15px;
+    list-style: none;
+}
 
-    .navbar li a:hover{
-       text-decoration: underline;
-       color : grey;
-    }
+.navbar li a{
+    color : white;
+    text-decoration : none;
+    padding : 30px;
+    display:block
+}
 
-    .navbar li a.active{
-        text-decoration: underline;
-        color : green;
-    }
+.navbar li a:hover{
+   text-decoration: underline;
+   color : grey;
+   background-color: white;
+   border-radius: 10px;
+}
 
-    .btn{
-        margin : 0px 9px;
-        color: white;
-        background-color: blue;
-        padding : 3px 4px;
-        border : 2px solid grey;
-        font-size: 15px;
-        cursor: pointer;
-     }
+.navbar li a.active{
+    text-decoration: underline;
+    color : green;
+}
 
-     .btn:hover{
-        background-color: green;
-     }
 
-     .container{
-        border : 2px solid white;
-        margin: 150px 2px;
-        padding: 70px 70px;
-        width: 33%;
-        display: block;
-        border-radius: 28px;
-     }
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px ;
+    justify-content: center;
+    align-items: center;
+}
 
-     .form-group input{
-        margin : 11px auto;
-        text-align: center;
-        display : block;
-        width : 344px;
-        padding : 6px;
-        border : 2px solid red;
-        font-size: 21px;
-    }
+#home h1{
+    color: white;
+    text-align: center;
+}
 
-    .container h1{
-        text-align : center;
-    }
+#home p{
+    color: white;
+    text-align: center;
+    
+}
 
-    .container button{
-        display : block;
-        width : 23%;
-        margin : auto;
-    }
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border: 2px solid brown;
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+#services .box img{
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.services-text{
+    margin-top: 10px;
+}
+
+.services-text div{
+    margin: -159px 0;
+}
+
+.box {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    
+}
+
+.h-secondary{
+    font-size: 3.8rem;
+    padding : 12px;
+}
+
+.btns{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btns:hover{
+    background-color: green;
+}
+
+.btn{
+    margin : 0px 9px;
+    color: white;
+    background-color: blue;
+    padding : 3px 4px;
+    border : 2px solid grey;
+    font-size: 15px;
+    cursor: pointer;
+ }
+
+ .btn:hover{
+    background-color: green;
+ }
+
+ .container{
+    border : 2px solid white;
+    margin: 237px 400px;
+    padding: 70px 70px;
+    width: 33%; 
+    display: block;
+    border-radius: 28px;
+ }
+
+ .center{
+    text-align: center;
+    
+ }
+
+ .form-group input{
+    margin : 11px auto;
+    text-align: center;
+    display : block;
+    width : 344px;
+    padding : 6px;
+    border : 2px solid red;
+    font-size: 21px;
+}
+
+.container h1{
+    text-align : center;
+}
+
+.container button{
+    display : block;
+    width : 23%;
+    margin : auto;
+}
+#client-section{
+    height : 344px;
+    
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+   
+    width : 713px
+}
+
+#contact{
+    height: 344px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-items{
+    padding: 0px;
+}
+
+#contact-box img{
+    height: 472px;
+    width: 713px;
+}
